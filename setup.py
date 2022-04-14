@@ -22,7 +22,7 @@ plugin_requires = []
 
 plugin_additional_data = []
 
-plugin_addtional_packages = ["flask"]
+plugin_addtional_packages = []
 
 plugin_ignored_packages = []
 
