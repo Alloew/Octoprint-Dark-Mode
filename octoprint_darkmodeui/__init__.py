@@ -5,8 +5,7 @@ import octoprint.plugin
 class DarkModePlugin(octoprint.plugin.types.OctoPrintPlugin, octoprint.plugin.core.RestartNeedingPlugin):
     def get_assets(self):
         return dict(
-            css = ["darkmode.css"],
-            clientjs = ["darkmode.js"]
+            clientjs = ["clientjs/darkmode.js"]
         )
 
 __plugin_pythoncompat__ = ">=2.7,<4"
