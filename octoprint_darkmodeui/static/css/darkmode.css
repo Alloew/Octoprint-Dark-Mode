@@ -8,6 +8,8 @@
     --L: hsl(220, 5%, 80%);
     --LL: hsl(220, 5%, 90%);
     --LLL: hsl(220, 5%, 100%);
+
+    --B: hsl(226, 97%, 58%);
 }
 
 body{
@@ -39,6 +41,11 @@ body{
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+
+    -webkit-transition: all 250ms;
+    -moz-transition: all 250ms;
+    -o-transition: all 250ms;
+    transition: all 250ms;
 }
 
 .btn.active,
@@ -47,14 +54,8 @@ body{
 .btn:focus,
 .btn:hover,
 .btn[disabled] {
-    color: #333;
-    background-color: #e6e6e6;
-    *background-color: #d9d9d9
-}
-
-.btn.active,
-.btn:active {
-    background-color: #ccc \9
+    background: var(--DDD);
+    color: var(--L);
 }
 
 .btn:first-child {
@@ -63,39 +64,18 @@ body{
 
 .btn:focus,
 .btn:hover {
-    color: #333;
+    color: var(--L);
     text-decoration: none;
-    background-position: 0 -15px;
-    -webkit-transition: background-position .1s linear;
-    -moz-transition: background-position .1s linear;
-    -o-transition: background-position .1s linear;
-    transition: background-position .1s linear
+    background-position: 0 0;
+    -webkit-transition: all 250ms;
+    -moz-transition: all 250ms;
+    -o-transition: all 250ms;
+    transition: all 250ms;
 }
 
 .btn:focus {
-    outline: #333 dotted thin;
-    outline: -webkit-focus-ring-color auto 5px;
-    outline-offset: -2px
-}
-
-.btn.active,
-.btn:active {
-    background-image: none;
-    outline: 0;
-    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
-    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05)
-}
-
-.btn.disabled,
-.btn[disabled] {
-    cursor: default;
-    background-image: none;
-    opacity: .65;
-    filter: alpha(opacity=65);
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none
+    outline: none;
+    outline-offset: 0;
 }
 
 .btn-large {
@@ -160,17 +140,10 @@ input[type=button].btn-block {
 .btn-primary {
     color: #fff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
-    background-color: #006dcc;
-    background-image: -moz-linear-gradient(top, #08c, #04c);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#08c), to(#04c));
-    background-image: -webkit-linear-gradient(top, #08c, #04c);
-    background-image: -o-linear-gradient(top, #08c, #04c);
-    background-image: linear-gradient(to bottom, #08c, #04c);
-    background-repeat: repeat-x;
-    border-color: #04c #04c #002a80;
-    border-color: rgba(0, 0, 0, .1) rgba(0, 0, 0, .1) rgba(0, 0, 0, .25);
-    *background-color: #04c;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
+    background-color: var(--B);
+    background-image: none;
+    background-repeat: no-repeat;
+    filter: none;
 }
 
 .btn-primary.active,
