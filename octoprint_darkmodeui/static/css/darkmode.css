@@ -19,3 +19,13 @@ body{
     background: var(--DDD);
     color: var(--LL);
 }
+
+.modal{
+    background: var(--D);
+    color: var(--LL);
+}
+
+.settings_plugin_plugin_manager_plugins_name{
+    background: var(--DD);
+    color: var(--LL);
+}
