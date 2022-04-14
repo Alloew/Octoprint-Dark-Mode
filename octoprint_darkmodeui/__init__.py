@@ -8,8 +8,7 @@ class DarkModePlugin(octoprint.plugin.types.OctoPrintPlugin, octoprint.plugin.co
         pass
     
     def on_ui_render(self, now, request, render_kwargs):
-        from flask import make_response
-        return make_response("<html><body>Dark Mode UI</body></html>", 200)
+        print("Rendered!")
 
 __plugin_pythoncompat__ = ">=2.7,<4"
 __plugin_implementation__ = DarkModePlugin()
