@@ -6,6 +6,7 @@ class DarkModePlugin(octoprint.plugin.types.OctoPrintPlugin, octoprint.plugin.co
     def get_assets(self):
         return dict(
             css = ["css/darkmode.css"],
+            js = ["js/darkmode.js"]
         )
 
 __plugin_pythoncompat__ = ">=2.7,<4"
