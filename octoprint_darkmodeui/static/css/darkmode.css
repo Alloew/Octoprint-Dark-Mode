@@ -1,0 +1,9 @@
+:root{
+    --mainBG: hsl(216, 9%, 11%);
+    --mainText: hsl(216, 9%, 90%);
+}
+
+body{
+    background-color: var(--mainBG);
+    color: var(--mainText);
+}

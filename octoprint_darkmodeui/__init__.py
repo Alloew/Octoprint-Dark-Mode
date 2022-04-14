@@ -1,14 +1,12 @@
 from __future__ import absolute_import
-from cgitb import html
 
 import octoprint.plugin
 
-class DarkModePlugin(octoprint.plugin.types.OctoPrintPlugin, octoprint.plugin.core.SortablePlugin):
-    def will_handle_ui(self, req):
-        pass
-    
-    def on_ui_render(self, now, request, render_kwargs):
-        print("Rendered!")
+class DarkModePlugin(octoprint.plugin.types.OctoPrintPlugin, octoprint.plugin.core.RestartNeedingPlugin):
+    def get_assets():
+        return dict(
+            css = ["css/darkmode.css"],
+        )
 
 __plugin_pythoncompat__ = ">=2.7,<4"
 __plugin_implementation__ = DarkModePlugin()
