@@ -1,9 +1,21 @@
-body{
-    background: black;
-    color: white;
+/* Dark Mode */
+
+:root{
+    --D: hsl(220, 8%, 23%);
+    --DD: hsl(220, 8%, 20%);
+    --DDD: hsl(220, 8%, 15%);
+
+    --L: hsl(220, 8%, 80%);
+    --LL: hsl(220, 8%, 90%);
+    --LLL: hsl(220, 8%, 100%);
 }
 
-button{
-    background: black;
-    color: white;
+body{
+    background-color: var(--DD);
+    color: var(--LL);
+}
+
+.navbar{
+    background: var(--DDD);
+    color: var(--LL);
 }
